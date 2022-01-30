@@ -9,17 +9,21 @@
       align-items: center;
       height: fit-content;
       padding: 0 0.8rem;
-      a {
+      .logo {
         color: #ffffff;
       }
       .logo {
+        color: #ffffff;
+
         font-size: 2rem;
         font-family: "Raleway", sans-serif;
       }
       .icon {
+        color: #ffffff;
+
         display: flex;
         align-items: center;
-        p {
+        .lang {
           margin-left: 0.25rem;
         }
       }
@@ -32,8 +36,32 @@
       margin: 0 auto;
       padding: 0.8rem 0;
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      a {
+      .navLink {
+        color: #ffffff;
+        font-size: 1rem;
+        margin: 0 0.5rem;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        &:hover {
+          color: #c45500;
+          transition: color 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .secondContainer.active {
+    background-color: #232f3e;
+    .proLinks {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0.8rem 0;
+      display: flex;
+      justify-content: center;
+      .navLink {
         color: #ffffff;
         font-size: 1rem;
         margin: 0 0.5rem;
@@ -64,7 +92,7 @@
         align-items: center;
         height: fit-content;
         padding: 0 0.8rem;
-        a {
+        .navLink {
           color: #ffffff;
         }
         .logo {
@@ -88,7 +116,7 @@
         padding: 0.8rem 0;
         display: flex;
         justify-content: center;
-        a {
+        .navLink {
           color: #ffffff;
           font-size: 0.7rem;
           margin: 0 0.5rem;
@@ -116,7 +144,7 @@
         align-items: center;
         height: fit-content;
         padding: 0.5rem 0;
-        a {
+        .navLink {
           color: #ffffff;
         }
         .logo {
@@ -146,60 +174,6 @@
             transition: all 0.3s ease-in-out;
             background-color: #fff;
           }
-        }
-
-        .hamburger.active .bar:nth-child(2) {
-          opacity: 0;
-        }
-
-        .hamburger.active .bar:nth-child(1) {
-          -webkit-transform: translateY(8px) rotate(45deg);
-          transform: translateY(8px) rotate(45deg);
-        }
-
-        .hamburger.active .bar:nth-child(3) {
-          -webkit-transform: translateY(-8px) rotate(-45deg);
-          transform: translateY(-8px) rotate(-45deg);
-        }
-      }
-    }
-    .secondContainer {
-      display: flex;
-      flex-direction: column;
-      height: fit-content;
-      position: absolute;
-      left: -200%;
-      z-index: 9999;
-      width: 100vw;
-      transition: all 0.5s ease;
-      .proLinks {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 0 auto;
-        width: 90%;
-        a {
-          margin: 0.5rem 0;
-        }
-      }
-    }
-    .secondContainer.active {
-      display: flex;
-      flex-direction: column;
-      height: fit-content;
-      position: absolute;
-      left: 0;
-      z-index: 9999;
-      width: 100vw;
-      transition: all 0.5s ease;
-      .proLinks {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 0 auto;
-        width: 90%;
-        a {
-          margin: 0.5rem 0;
         }
       }
     }
