@@ -46,13 +46,12 @@ a:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 1200px;
-  height: 100vh;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  width: 85%;
+  height: fit-content;
+  padding: 10rem 0;
   margin: 0 auto;
   .imgCon {
-    min-width: 600px;
+    min-width: 800px;
     height: fit-content;
     display: block;
     overflow: hidden;
@@ -152,7 +151,7 @@ a:hover {
 .hamburger {
   display: none;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   .navbar {
     .firstContainer {
       background-color: #131921;
@@ -207,11 +206,9 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95%;
-    height: 100vh;
-    padding-top: 0;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    width: 90%;
+    height: fit-content;
+    padding: 10rem 0;
     margin: 0 auto;
     .imgCon {
       min-width: 500px;
@@ -257,7 +254,7 @@ a:hover {
     }
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .navbar {
     .firstContainer {
       background-color: #131921;
