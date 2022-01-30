@@ -1,0 +1,207 @@
+.navbar {
+  .firstContainer {
+    background-color: #131921;
+    .content {
+      width: 85%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: fit-content;
+      padding: 0 0.8rem;
+      a {
+        color: #ffffff;
+      }
+      .logo {
+        font-size: 2rem;
+        font-family: "Raleway", sans-serif;
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        p {
+          margin-left: 0.25rem;
+        }
+      }
+    }
+  }
+  .secondContainer {
+    background-color: #232f3e;
+    .proLinks {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0.8rem 0;
+      display: flex;
+      justify-content: center;
+      a {
+        color: #ffffff;
+        font-size: 1rem;
+        margin: 0 0.5rem;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        &:hover {
+          color: #c45500;
+          transition: color 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .navbar {
+    .firstContainer {
+      background-color: #131921;
+      .content {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: fit-content;
+        padding: 0 0.8rem;
+        a {
+          color: #ffffff;
+        }
+        .logo {
+          font-size: 1.5rem;
+          font-family: "Raleway", sans-serif;
+        }
+        .icon {
+          display: flex;
+          align-items: center;
+          p {
+            margin-left: 0.25rem;
+          }
+        }
+      }
+    }
+    .secondContainer {
+      background-color: #232f3e;
+      .proLinks {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0.8rem 0;
+        display: flex;
+        justify-content: center;
+        a {
+          color: #ffffff;
+          font-size: 0.7rem;
+          margin: 0 0.5rem;
+          padding: 0;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 600;
+          &:hover {
+            color: #c45500;
+            transition: color 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar {
+    .firstContainer {
+      background-color: #131921;
+      .content {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: fit-content;
+        padding: 0.5rem 0;
+        a {
+          color: #ffffff;
+        }
+        .logo {
+          font-size: 1.5rem;
+          font-family: "Raleway", sans-serif;
+        }
+        .icon {
+          display: flex;
+          align-items: center;
+          p {
+            margin-left: 0.25rem;
+          }
+          margin-right: 1.5rem;
+        }
+        .links {
+          display: flex;
+        }
+        .hamburger {
+          display: block;
+          cursor: pointer;
+          .bar {
+            display: block;
+            width: 35px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: #fff;
+          }
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+          opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+          -webkit-transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+          -webkit-transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+    }
+    .secondContainer {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      position: absolute;
+      left: -200%;
+      z-index: 9999;
+      width: 100vw;
+      transition: all 0.5s ease;
+      .proLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 auto;
+        width: 90%;
+        a {
+          margin: 0.5rem 0;
+        }
+      }
+    }
+    .secondContainer.active {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      position: absolute;
+      left: 0;
+      z-index: 9999;
+      width: 100vw;
+      transition: all 0.5s ease;
+      .proLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 auto;
+        width: 90%;
+        a {
+          margin: 0.5rem 0;
+        }
+      }
+    }
+  }
+}
